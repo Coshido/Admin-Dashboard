@@ -19,6 +19,9 @@ body{
     grid-template-columns: minmax(200px, 1fr) 4fr;
     font-family: Roboto, sans-serif;
 }
+
+/*Sidebar styling*/
+
 .sidebar{
     background-color: var(--blue);
     color:var(--white);
@@ -41,12 +44,73 @@ body{
 .sidebar-title{
     font-size: 32px;
 }
-
 #git-link{
     text-decoration: none;
     color: inherit;
     font-size: 16px;
 }
 
+/* Main Content Styling */
 
-
+.main-content{
+    display: grid;
+    grid-template-rows: minmax(200px, 1fr) 4fr;
+}
+.header{
+    box-shadow: 0 4px 2px -2px gray;
+    display:grid;
+    grid-template-rows: auto auto;
+    padding: 20px clamp(20px, 5%, 50px);
+}
+.header-top{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    align-items: center;
+    gap: 20px;
+    align-self: start;
+}
+.avatar-small{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url("https://source.unsplash.com/random/100x100");
+}
+.searchbar{
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    background-color: var(--grey);
+    max-width: 90%
+}
+.header-bottom{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    align-self: end;
+    gap: 20px;
+    align-items: center;
+}
+.avatar-big{
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url("https://source.unsplash.com/random/100x100");
+}
+.username-big{
+    font-size: 24px;
+}
+.username-top-text{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.button{
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid var(--blue);
+    border-radius: 20px;
+    width: 80px;
+    font-family: Roboto,sans-serif;
+}
