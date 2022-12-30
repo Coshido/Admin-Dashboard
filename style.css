@@ -1,0 +1,52 @@
+:root{
+    --black: #000000;
+    --blue: #14213D;
+    --yellow: #FCA311;
+    --grey: #E5E5E5;
+    --white: #FFFFFF;
+}
+@font-face{
+    font-family: Roboto;
+    src:url(./resources/Roboto-Regular.ttf);
+}
+p{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 4fr;
+    font-family: Roboto, sans-serif;
+}
+.sidebar{
+    background-color: var(--blue);
+    color:var(--white);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 50px;
+    padding: clamp(20px, 10%, 50px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.sidebar-menu, .menu-item, .sidebar-title{
+    display: grid;
+    gap: 30px 10px;
+    align-content: start;
+}
+.menu-item, .sidebar-title{
+    grid-template-columns: auto 1fr;
+}
+.sidebar-title{
+    font-size: 32px;
+}
+
+#git-link{
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+
+
